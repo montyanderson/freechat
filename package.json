@@ -1,0 +1,23 @@
+{
+  "name": "freechat",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "NODE_ENV=production browserify -t vueify -e client/index.js > client/public/bundle.js",
+    "dev": "watchify -t vueify -e client/index.js -o client/public/bundle.js"
+  },
+  "author": "Monty Anderson <montydev@protonmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.1.0",
+    "ioredis": "^3.2.2",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
+    "vue": "^2.5.13",
+    "vueify": "^9.4.1",
+    "watchify": "^3.10.0",
+    "ws": "^4.0.0"
+  }
+}
