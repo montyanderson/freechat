@@ -103,7 +103,7 @@ module.exports = {
 		});
 
 		socket.on("peerDisconnect", async publicKey => {
-			delete this.peers[publicKey];
+			Vue.delete(this.peers, publicKey);
 		});
 
 		socket.on("message", message => {
