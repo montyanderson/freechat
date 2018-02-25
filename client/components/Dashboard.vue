@@ -28,7 +28,7 @@ const KeyPair = require("../lib/KeyPair");
 
 const Chat = require("./Chat.vue");
 
-const socket = io(`http://localhost:3000`);
+const socket = io(location.origin);
 
 module.exports = {
 	props: [ "keyPair" ],
