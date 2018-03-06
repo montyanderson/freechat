@@ -4,7 +4,7 @@
 			<h5 class="center-align">{{peer.id}}</h5>
 		</div>
 
-		<div class="col s12 messages">
+		<div class="col s12 messages" ref="messages">
 			<ul>
 				<li v-if="peer.messages.length == 0">
 					<p class="center-align grey-text">no messages :(</p>
@@ -29,7 +29,7 @@
 
 <style>
 .messages {
-	height: 500px;
+	height: 60vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -81,6 +81,9 @@ module.exports = {
 			this.$emit("message", this.message);
 			this.message = "";
 		}
+	},
+	updated() {
+		this.$refs.messages.scrollTop = this.$refs.messages.scrollHeight;
 	}
 };
 </script>
