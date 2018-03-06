@@ -1,7 +1,7 @@
 <template>
 	<div class="row">
 		<div class="col s12">
-			<h5 class="center-align">{{peer.id}}</h5>
+			<h5 class="center-align address">{{peer.id}}</h5>
 		</div>
 
 		<div class="col s12 messages" ref="messages">
@@ -67,6 +67,10 @@
     border-top-left-radius: 12px;
 
 	float: right;
+}
+
+.address {
+	font-size: calc(1rem + 1vw);
 }
 </style>
 
