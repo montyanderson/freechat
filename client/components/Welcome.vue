@@ -37,7 +37,7 @@
 
 <style>
 h1 {
-	font-size: 10rem;
+	font-size: calc(3rem + 5vw);
 	font-weight: 500;
 }
 

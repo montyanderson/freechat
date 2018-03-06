@@ -1,6 +1,6 @@
 <template>
 	<div class="dashboard row">
-		<div class="col s5">
+		<div class="col s12 l5">
 			<ul class="collection with-header">
 				<li class="collection-header"><h4>Users</h4></li>
 
@@ -15,7 +15,7 @@
 			</ul>
 		</div>
 
-		<div class="col s7">
+		<div class="col s12 l7">
 			<Chat v-if="chatPeer" v-bind:peer="chatPeer" v-on:message="newMessage"></Chat>
 		</div>
 	</div>
