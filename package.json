@@ -15,7 +15,7 @@
     "ioredis": "^4.2.0",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.1.1",
-    "vue": "^2.5.22",
+    "vue": "^2.6.9",
     "vueify": "^9.4.1",
     "watchify": "^3.11.0",
     "ws": "^6.1.3"
